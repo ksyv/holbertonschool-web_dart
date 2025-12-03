@@ -45,4 +45,10 @@ class Password {
     
     return hasUppercase && hasLowercase && hasDigit;
   }
+
+  @override
+  String toString() {
+    final String safePassword = _password ?? '';
+    return "Your Password is: $safePassword";
+  }
 }
