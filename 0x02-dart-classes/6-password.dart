@@ -1,6 +1,8 @@
 class Password {
   String? _password;
 
+  Password({String? password}) : _password = password;
+
   set password(String? value) {
     _password = value;
   }
